@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブラックジャック</title>
+    <script src="js/consts.js" defer></script>
+    <script src="js/deck.js" defer></script>
+    <script src="js/game.js" defer></script>
+    <script src="js/debug.js" defer></script>
+    <script src="js/render.js"></script>
+    <script src="js/index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="mx-3">
+        <div class="border-b-2 border-indigo-500 py-4">
+            <p>Dealer's Hand 合計：<span id="dealer_sum_hand"></span></p>
+            <ul id="dealer_hand" style="display:flex;"></ul>
+        </div>
+        <div class="border-b-2 border-indigo-500 py-4">
+            <p>Your Hand 合計：<span id="player_sum_hand"></span></p>
+            <ul id="player_hand" style="display:flex;"></ul>
+        </div>
+        <div class="my-2">
+            <button id="hit" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">ヒット</button>
+            <button id="stand"  class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">スタンド</button>
+        </div>
+    </div>
+</body>
+</html>
